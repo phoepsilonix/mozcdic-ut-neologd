@@ -17,7 +17,7 @@ with urllib.request.urlopen(url) as response:
 neologdver = html.split("mecab-user-dict-seed.")[1]
 neologdver = neologdver.split(".csv.xz")[0]
 
-subprocess.run(["wget", "-nc", f"https://github.com/neologd/mecab-ipadic-neologd/raw/master/seed/mecab-user-dict-seed.{neologdver}.csv.xz"])
+subprocess.run(["wget", "-nc", f"https://github.com/phoepsilonix/mecab-ipadic-neologd/raw/master/seed/mecab-user-dict-seed.{neologdver}.csv.xz"])
 
 with lzma.open(f"mecab-user-dict-seed.{neologdver}.csv.xz") as xz_ref:
     lines = xz_ref.read().decode()
