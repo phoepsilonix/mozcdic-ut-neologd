@@ -14,7 +14,7 @@ bash make.sh
 mv ./merge-ut-dictionaries/src/merge/*.bz2 $BASE/
 tar xf ./$SYSTEMDIC.txt.tar.bz2 || bzip2 -d ./$SYSTEMDIC.txt.bz2
 
-curl -LO https://github.com/phoepsilonix/dict-to-mozc/releases/download/v0.4.6/dict-to-mozc-x86_64-unknown-linux-gnu.tar.gz
+curl -LO https://github.com/phoepsilonix/dict-to-mozc/releases/download/v0.5.0/dict-to-mozc-x86_64-unknown-linux-gnu.tar.gz
 tar xf dict-to-mozc-x86_64-unknown-linux-gnu.tar.gz --strip-component=1
 
 curl -LO https://github.com/google/mozc/raw/refs/heads/master/src/data/dictionary_oss/id.def
